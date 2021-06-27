@@ -1,18 +1,13 @@
 {
-  "name": "ethereum-blocks",
+  "name": "@polarfox/avalanche-blocks",
+  "version": "0.0.0",
+  "repository": "https://github.com/Polarfox-DEX/polarfox-avalanche-blocks",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ethereum-blocks",
-    "create-local": "graph create --node http://localhost:8020/ blocklytics/ethereum-blocks",
-    "remove-local": "graph remove --node http://localhost:8020/ blocklytics/ethereum-blocks",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 blocklytics/ethereum-blocks",
-    "deploy-rinkeby": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/rinkeby-blocks",
-    "deploy-kovan": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/kovan-blocks",
-    "deploy-goerli": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/goerli-blocks",
-    "deploy-ropsten": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ropsten-blocks",
-    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks"
+    "deploy-avalanche": "graph deploy klemah/polarfox-avalanche-blocks --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
+    "deploy-fuji": "graph deploy klemah/polarfox-fuji-blocks --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",

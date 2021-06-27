@@ -1,12 +1,12 @@
 import {
-    EthereumBlock
+    EthereumBlock as AvalancheBlock
 } from "@graphprotocol/graph-ts"
 
 import {
     Block
 } from "../../generated/schema"
 
-export function handleBlock(block: EthereumBlock): void {
+export function handleBlock(block: AvalancheBlock): void {
     let id = block.hash.toHex()
     let blockEntity = new Block(id);
     blockEntity.number = block.number;
